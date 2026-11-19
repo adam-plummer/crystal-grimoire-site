@@ -1,0 +1,142 @@
+/* Crystal Grimoire - the game's website (Milestone 7, after Snakes in the Grass's).
+   Parchment and ink on the night sky, the game's own colours; Alegreya, the game's type. */
+
+:root {
+    --parchment: #f3e6c8;
+    --parchment-edge: #dcc79c;
+    --ink: #3a2414;
+    --ink-soft: #6b5640;
+    --gilt: #b8955a;
+    --link: #8a4b14;
+    --night: #1a1726;
+    --night-ink: #ece2cc;
+    --night-soft: #aaa0b6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: var(--night);
+}
+
+body {
+    margin: 0;
+    padding: 24px 16px 48px;
+    font-family: "Alegreya Sans", Georgia, serif;
+    font-size: 18px;
+    line-height: 1.55;
+    color: var(--ink);
+    background: var(--night);
+}
+
+.sheet {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 36px 40px 40px;
+    background: var(--parchment);
+    border: 4px solid var(--gilt);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+h1,
+h2 {
+    font-family: "Alegreya SC", Georgia, serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #5a3417;
+}
+
+h1 {
+    margin: 0 0 4px;
+    font-size: 34px;
+}
+
+h2 {
+    margin: 32px 0 8px;
+    font-size: 23px;
+    border-bottom: 2px solid var(--parchment-edge);
+    padding-bottom: 4px;
+}
+
+h3 {
+    margin: 22px 0 4px;
+    font-size: 19px;
+}
+
+p,
+ul,
+ol {
+    margin: 0 0 12px;
+}
+
+ul,
+ol {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+a {
+    color: var(--link);
+}
+
+.dated {
+    margin: 0 0 20px;
+    color: var(--ink-soft);
+}
+
+.summary {
+    margin: 20px 0;
+    padding: 14px 18px 4px;
+    background: rgba(184, 149, 90, 0.16);
+    border-left: 4px solid var(--gilt);
+    border-radius: 4px;
+}
+
+nav {
+    max-width: 760px;
+    margin: 0 auto 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a,
+footer,
+footer a {
+    color: var(--night-soft);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav a:hover,
+footer a:hover {
+    color: var(--night-ink);
+}
+
+footer {
+    max-width: 760px;
+    margin: 24px auto 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.home {
+    text-align: center;
+}
+
+.home h1 {
+    font-size: clamp(2rem, 8vw, 3.2rem);
+}
+
+@media (max-width: 560px) {
+    .sheet {
+        padding: 24px 18px 28px;
+    }
+}
