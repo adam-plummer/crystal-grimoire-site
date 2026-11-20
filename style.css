@@ -90,6 +90,23 @@ a {
     color: var(--ink-soft);
 }
 
+/* The testers' page's links to the group, the opt-in and the form (from Snakes' site). */
+.button {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 8px 18px;
+    background: var(--night);
+    color: var(--night-ink);
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 2px solid var(--gilt);
+}
+
+.button:hover {
+    background: var(--ink);
+}
+
 .summary {
     margin: 20px 0;
     padding: 14px 18px 4px;
