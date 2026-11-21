@@ -152,7 +152,44 @@ footer {
     font-size: clamp(2rem, 8vw, 3.2rem);
 }
 
+/* The home page's pictures: the feature graphic, then four store screenshots (tools/art/make_store.py). */
+.home .feature {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 0 20px;
+    border-radius: 6px;
+}
+
+.home .pitch {
+    max-width: 560px;
+    margin: 0 auto 20px;
+}
+
+.shots {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 0 0 24px;
+}
+
+.shots img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.home .made {
+    margin-top: 20px;
+    font-size: 15px;
+    color: var(--ink-soft);
+}
+
 @media (max-width: 560px) {
+    .shots {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .sheet {
         padding: 24px 18px 28px;
     }
